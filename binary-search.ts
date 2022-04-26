@@ -4,7 +4,7 @@ function search(nums: number[], target: number): number {
       endpoint = nums.length - 1,
       midpoint = Math.floor((endpoint - startpoint) / 2)
 
-    while (startpoint < endpoint) {
+    while (startpoint <= endpoint) {
         midpoint = startpoint + Math.floor((endpoint - startpoint) / 2)
         if (nums[midpoint] < target) {
             startpoint = midpoint + 1
